@@ -4,7 +4,7 @@ This repository contains the source code for a client-server chat application
 developed as part of my Bachelor's thesis titled "Development of a Client-Server
 Chat Application". The application was developed with C++ and SDL.
 
-The thesis paper can be found here [add-link].
+The thesis paper can be found here: <http://urn.fi/URN:NBN:fi:amk-201705107324>.
 
 ## Note
 
