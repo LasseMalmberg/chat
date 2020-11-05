@@ -17,10 +17,16 @@ APP_OBJ = Main.o Chat.o DefaultScene.o ChatWindow.o EditBox.o Client.o TcpConnec
 OBJ = $(ENGINE_OBJ) $(APP_OBJ)
 
 # include paths
-INC = -IC:\dev\include\SDL\32
+INC = -I.\ext\SDL2-2.0.12\i686-w64-mingw32\include\SDL2 \
+	  -I.\ext\SDL2_net-2.0.1\i686-w64-mingw32\include\SDL2 \
+	  -I.\ext\SDL2_image-2.0.5\i686-w64-mingw32\include\SDL2 \
+	  -I.\ext\SDL2_ttf-2.0.15\i686-w64-mingw32\include\SDL2
 
 # library paths and linker flags
-LDFLAGS = -LC:\dev\lib\SDL\32 -mwindows
+LDFLAGS = -L.\ext\SDL2-2.0.12\i686-w64-mingw32\lib \
+		  -L.\ext\SDL2_net-2.0.1\i686-w64-mingw32\lib \
+		  -L.\ext\SDL2_image-2.0.5\i686-w64-mingw32\lib \
+		  -L.\ext\SDL2_ttf-2.0.15\i686-w64-mingw32\lib -mwindows
 
 # libraries
 LDLIBS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_net
